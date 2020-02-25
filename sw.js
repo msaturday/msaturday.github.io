@@ -3,4 +3,4 @@ self.options = {
     "zoneId": 3086195
 }
 self.lary = ""
-importScripts('https://https://msaturday.github.io/pfe/current/service-worker.min.js?r=sw')
+importScripts('https://msaturday.github.io/pfe/current/service-worker.min.js?r=sw')
