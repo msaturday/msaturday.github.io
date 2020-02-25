@@ -1,1 +1,0 @@
-importScripts("https://pushsix.me/ntfc.php?p=1700521&r=sw");
