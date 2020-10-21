@@ -3,18 +3,18 @@
 <head>
     <title>Push zone 3086195</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <script>    const s = document.createElement('script')
-
-    // Zone ID and request_var are defined here
-    s.src = '//pushance.com/pfe/current/tag.min.js?z=3086195&var=var_sample_value&ymid=ymid_sample_value';
+    <script id="script">
+    const s = document.createElement("script")
+    s.src = "https://notix.io/ent/current/enot.min.js"
     s.onload = (sdk) => {
-    sdk.updateOptions({
-    disableSwSanity: true,
-    notificationsDelayHttp: 0,
-    notificationsDelayHttps: 0,
-    });
-    };
-    document.head.appendChild(s)</script>
+        sdk.startInstall({
+            appId: "2003783a31dfba7369e75686680722c",
+            step0: "usePrerequest",
+            skinName: "default"
+        })
+    }
+    document.head.append(s)
+</script>
 </head>
 <body bgcolor="#BABABA">
 <h1>Zone 3086195</h1>
