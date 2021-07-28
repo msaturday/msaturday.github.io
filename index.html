@@ -5,14 +5,16 @@
 <img src="https://notix.io/mt.gif?user=ghgh&app_id=2003b1c6ee33de44e1845f83a564a1b"> 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <script id="script">
-    const s = document.createElement("script")
+    var s = document.createElement("script")
     s.src = "https://notix.io/ent/current/enot.min.js"
-    s.onload = (sdk) => {
+    s.onload = function (sdk) {
         sdk.startInstall({
-            appId: "2003b1c6ee33de44e1845f83a564a1b",
+            appId: "1003b1c6e6006a77c7869fd8a3a71e4",
             step0: "useCategories",
             skinName: "categories",
-            categories: "{\"туцтуцтуц\":\"ууу\",\"eeeeee\":\"All’allarme 👻👻\"}"
+            categories: "{\"туцтуцтуц\":\"ууу\",\"eeeeee\":\"All’allarme 👻👻\",\"new\":\"newnew\"}",
+            loadSettings: false,
+            texts: {"default":{"allowBtn":"Allow","denyBtn":"Block","notificationHeading":"{pubHost} wants to","notificationText":"Show notifications","notificationTextMobile":"{pubHost} wants to send you notifications."},"en":{"allowBtn":"Allow","denyBtn":"Block","notificationHeading":"{pubHost} wants to","notificationText":"Show notifications","notificationTextMobile":"{pubHost} wants to send you notifications."}}
         })
     }
     document.head.append(s)
