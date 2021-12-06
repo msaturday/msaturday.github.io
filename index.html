@@ -10,10 +10,7 @@
     s.onload = function (sdk) {
         sdk.startInstall({
             appId: "1003b1c6e6006a77c7869fd8a3a71e4",
-            step0: "usePrerequest",
-            skinName: "slider",
-            loadSettings: false,
-            texts: {"default":{"allowBtn":"Allow","denyBtn":"Block","notificationHeading":"{pubHost} wants to","notificationText":"Show notifications","notificationTextMobile":"{pubHost} wants to send you notifications."},"en":{"allowBtn":"Allow","denyBtn":"Block","notificationHeading":"{pubHost} wants to","notificationText":"Show notifications","notificationTextMobile":"{pubHost} wants to send you notifications."}}
+            loadSettings: true
         })
     }
     document.head.append(s)
