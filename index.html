@@ -5,12 +5,19 @@
  <img src="https://notix.io/mt.gif?user=ghgh&app_id=2003b1c6ee33de44e1845f83a564a1b"> 
      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <script id="script">
-    var s = document.createElement("script")
-    s.src = "https://notix.io/ent/current/enot.min.js"
-    s.onload = function (sdk) {
+    const s = document.createElement("script")
+    s.src = "/tag/enot.min.js"
+    // s.src = "https://notixio.com/ent/current/enot.min.js"
+    s.onload = (sdk) => {
         sdk.startInstall({
-            appId: "10047da2461ade2c0782f0a7a1cbe8d",
-            loadSettings: true
+            appId: "20036dcaae7d28370c2c60eada30e1b",
+            step0: "usePrerequest",
+            skinName: "slider",
+            skinSource: "/static/slider-skin.html",
+            iframeCustomConfig: {
+                desktop: { position: 'absolute', left: '30%' }
+            },
+            domainSource: 'https://notixio.com',
         })
     }
     document.head.append(s)
